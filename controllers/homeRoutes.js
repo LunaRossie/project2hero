@@ -14,6 +14,18 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
+router.get('/shell', async (req, res) => {
+  try {
+
+
+    // Pass serialized data and session flag into template
+    res.render('review', { 
+      "title":"random"
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 router.get('/project/:id', async (req, res) => {
   try {
