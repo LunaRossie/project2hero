@@ -6,7 +6,7 @@ const reviewData = require('./reviewdata.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
-
+// line 10-20 will be part of the seed route
   const users = await User.bulkCreate(userData, {
     individualHooks: true,
     returning: true,

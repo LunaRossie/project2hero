@@ -35,7 +35,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
+const forceTables = process.env.FORCETABLES === 'true' ? true : false;
 
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: forceTables }).then(() => {
   app.listen(PORT, () => console.log(`Now listening http://localhost:${PORT}`));
 }); 
