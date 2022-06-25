@@ -14,6 +14,9 @@ The following topics will be covered in this unit:
 * Express.js
 * Restaurant, Cuisine, foodie, Turtle and LemonChiffon
 
+Links
 Heroku URL
 https://git.heroku.com/project2hero.git
 
+GitHub repo
+https://github.com/LunaRossie/project2hero
