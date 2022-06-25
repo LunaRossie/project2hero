@@ -22,3 +22,86 @@ header, .project:not(:last-child) {
   font-weight: bold;
   margin-left: -5px;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: san-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: lemonchiffon;
+    padding: 20px;
+}
+
+nav {
+  background-color: bisque;
+  display: grid;
+  place-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul a {
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  color: darkmagenta;
+  transition: 0.2s ease-in;
+  font-size: 18px;
+}
+nav ul a hover {
+  background-color: lemonchiffon;
+  color: white;
+}
+items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px; 
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+item img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+item img:hover{
+  transform: scale(1.04);
+}
+item h2 {
+  padding: 5px;
+  text-align: center;
+}
+item button {
+  padding: 5px 30px;
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+  color: aquamarine;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.2s all;
+}
+item button:hover {
+  transform: scale(1.08);
+}
+@media  and (max-width: 1000px) {
+  items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media  and (max-width: 768px) {
+  items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+

@@ -24,7 +24,6 @@ router.get('/shell', async (req, res) => {
       "date":"Wednesday",
       "rating":"5 star",
       
-      
     });
   } catch (err) {
     res.status(500).json(err);
