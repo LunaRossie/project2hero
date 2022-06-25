@@ -1,4 +1,5 @@
-select * from review;
+select * from user;
+
 
 
 
