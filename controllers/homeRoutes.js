@@ -20,9 +20,11 @@ router.get('/shell', async (req, res) => {
 
     // Pass serialized data and session flag into template
     res.render('review', { 
-      "title":"random",
+      "title":"Food Festival",
       "date":"Wednesday",
       "rating":"5 star",
+      "content": "com"
+
       
     });
   } catch (err) {
