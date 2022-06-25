@@ -20,3 +20,5 @@ https://git.heroku.com/project2hero.git
 
 GitHub repo
 https://github.com/LunaRossie/project2hero
+
+http://localhost:3001/api/seed/
