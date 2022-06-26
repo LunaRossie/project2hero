@@ -21,9 +21,9 @@ router.get('/shell', async (req, res) => {
     // Pass serialized data and session flag into template
     res.render('review', { 
       "title":"Food Festival",
-      "date":"Wednesday",
+      "date":"July 4th",
       "rating":"5 star",
-      "content": "com"
+      "content": ""
 
       
     });
