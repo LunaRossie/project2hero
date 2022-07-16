@@ -18,7 +18,7 @@ Food Festival finder is a progressive full stack web app that allows users to vi
 Create a full stack Web Application with the following topics featured:
 
 [x] Routes for retrieving and adding new data
-[x] Folder structure that meest the MVC paradigm
+[x] Folder structure that meets the MVC paradigm
 [x] Use a Mysql database with a Sequelize ORM
 [x] Deployed using Heroku 
 [x] Migration strategy using seeds and schema files
@@ -61,6 +61,7 @@ With the described process, we were able ro create an engaging, efficient and ef
 Links
 
 Heroku URL
+https://project2hero.herokuapp.com/
 https://git.heroku.com/project2hero.git
 https://dashboard.heroku.com/apps/project2hero/settings
 
