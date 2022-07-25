@@ -22,41 +22,78 @@ header, .project:not(:last-child) {
   font-weight: bold;
   margin-left: -5px;
 }
-
 * {
   margin: 0;
   padding: 0;
   font-family: san-serif;
   box-sizing: border-box;
 }
-
 h1 {
     text-align: center  ;
     padding: 20px;
     background-color: green;
 }
-
 nav {
   background-color: bisque;
   display: grid;
   place-items: center;
 }
-
+nav::after{
+  content: '';
+  clear: both;
+  display: table;
+}
 nav ul {
   list-style-type: none;
+  float: right;
+  margin-right: 40px;
+  position: relative;
 }
-
-nav ul a {
+nav ul li {
+  float: left;
   display: inline-block;
   padding: 20px;
-  text-decoration: none;
-  color: darkmagenta;
-  transition: 0.2s ease-in;
-  font-size: 18px;
+  margin: 0 5px;
 }
-nav ul a:hover {
-  background-color: olive;
-  color: rgb(255, 255, 255);
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul ul {
+  position: absolute;
+  top: 70px;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li :hover > ul {
+
+}
+nav ul ul li {
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid #056605;
+}
+nav ul ul ul li {
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ul li a:hover {
+  box-shadow: 0 0 5px #056605;
+  position: absolute;
+  top: 90px;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+  display: list-item;
+  border-bottom: 1px;
+  font-size: 18px;
 }
 items {
   display: grid;
@@ -96,11 +133,9 @@ item button {
 item button:hover {
   transform: scale(1.08);
 }
-@media and (max-width: 1000px) {
-  items {
+@media and (max-width: 1000px) 
+items {
     grid-template-columns: repeat(2, 1fr);
-  }
-
 }
 
 @media and (max-width: 768px) {
